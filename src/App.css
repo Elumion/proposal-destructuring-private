@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 0 10px;
 }
 
 .App-link {
@@ -35,4 +36,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header p {
+  text-align: left;
+  margin: 5px;
+  position: relative;
+}
+
+.App-header div {
+  width: 90%;
+  border: 1px solid #fff;
+  padding: 80px 40px;
+  border-radius: 15px;
+}
+
+.container p::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+
+  transform: translateY(-50%);
+  margin-right: 16px;
+  border-radius: 40px;
+  background-color: rgba(135, 138, 135, 0.933);
+  width: 35px;
+  height: 3px;
 }
